@@ -1,13 +1,17 @@
 Package: gigamonagi
 Type: Package
-Title: What the Package Does (Title Case)
+Title: The package of me, by me, for me in R
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Author: Nagi Teramo
+Maintainer: Nagi Teram <teramonagi@gmail.com>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+License: MIT
 Encoding: UTF-8
 LazyData: true
-Suggests: testthat
+Imports:
+  dplyr,
+  readr
+Suggests:
+  testthat
 RoxygenNote: 6.0.1

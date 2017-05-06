@@ -1,4 +1,4 @@
-# gigamonagi package
+# gigamonagi package [![Travis-CI Build Status](https://travis-ci.org/teramonagi/gigamonagi.svg?branch=master)](https://travis-ci.org/teramonagi/gigamonagi)
 
 ## Simply speaking...
 
