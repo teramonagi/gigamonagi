@@ -4,13 +4,12 @@
 \alias{is_numeric}
 \title{A more general test of an object being interpretable as numbers.}
 \usage{
-is_numeric(x, na = c("", "NA"))
+is_numeric(x, na = FALSE)
 }
 \arguments{
 \item{x}{Character vector of values to parse.}
 
-\item{na}{Character vector of strings to use for missing values.
-Set this option to \code{character()} to indicate no missing values.}
+\item{na}{Boolean. It determines wether NA is regarded as TRUE/FALSE.}
 }
 \description{
 A more general test of an object being interpretable as numbers.
