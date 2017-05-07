@@ -5,7 +5,7 @@
 #' @param address Character vector of address strings.
 #'
 #' @examples
-#' address <- "東京都中央区月島２－１０－１"
+#' address <- "285 Fulton St, New York"
 #' geocode(address)
 #'
 #' @export

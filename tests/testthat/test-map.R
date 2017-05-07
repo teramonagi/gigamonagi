@@ -7,5 +7,6 @@ test_that("geocode() for a single address", {
 
 test_that("geocode() for multiple addresses", {
   address <- c("東京都中央区月島２－１０－１", "東京都江東区豊洲３－６－８")
-  expect_equal(data.frame(lat=c(35.66357, 35.65986), lng=c(139.7844, 139.7962)), geocode(address))
+  answer <- data.frame(lat=c(35.66357, 35.65986), lng=c(139.7844, 139.7962))
+  expect_equal(answer, geocode(address),tolerance = .0001)
 })

@@ -13,7 +13,7 @@ geocode(address)
 Get geocode from address string.
 }
 \examples{
-address <- "東京都中央区月島２－１０－１"
+address <- "285 Fulton St, New York"
 geocode(address)
 
 }
