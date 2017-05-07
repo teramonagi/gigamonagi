@@ -4,5 +4,5 @@
 #'
 #' @name gigamonagi
 #' @docType package
-#' @import dplyr readr
+#' @import dplyr readr httr
 NULL
