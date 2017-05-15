@@ -12,3 +12,9 @@ test_that("is_numeric() for data.frame", {
   expect_equal(dplyr::filter(df, is_numeric(a)), dplyr::tibble(a=c("123", "432")))
   expect_equal(dplyr::filter(df, is_numeric(a, na=TRUE)), dplyr::tibble(a=c(NA, "123", "432")))
 })
+
+test_that("has_na()", {
+  df <- data.frame(a=1:3, b=5:7, c=c(NA, 1:2))
+  expect_equal(has_na(df), c(a=FALSE, b=FALSE, c=TRUE))
+})
+
