@@ -17,3 +17,19 @@ is_numeric <- function(x, na = FALSE)
   result[!index_na] <- suppressWarnings(!is.na(as.numeric(x[!index_na])))
   result
 }
+
+#' Does each column in a data.frame have NA
+#'
+#' Does each column in a data.frame have NA
+#'
+#' @param df data.frame
+#'
+#' @examples
+#' df <- data.frame(a=1:3, b=5:7, c=c(NA, 1:2))
+#' has_na(df)
+#'
+#' @export
+has_na <- function(df)
+{
+  apply(df, 2, function(x){any(is.na(x))})
+}
