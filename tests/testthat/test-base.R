@@ -20,5 +20,5 @@ test_that("has_na()", {
 
 test_that("mode()", {
   expect_equal(mode(c(1,2,3,3,3,6)), 3)
-  expect_equal(mode(c("A", "A", "A", "B")), 3)
+  expect_equal(mode(c("A", "A", "A", "B")), "A")
 })
