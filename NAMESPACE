@@ -3,6 +3,7 @@
 export(geocode)
 export(has_na)
 export(is_numeric)
+export(scientific_10)
 import(dplyr)
 import(httr)
 import(readr)
