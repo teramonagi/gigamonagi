@@ -16,8 +16,8 @@ scientific_10 <- function(x)
 {
   index_zero <- which(x == 0)
   label <- scales::scientific_format()(x)
-  label <- str_replace(label, "e", " %*% 10^")
-  label <- str_replace(label, "\\^\\+", "\\^")
+  label <- stringr::str_replace(label, "e", " %*% 10^")
+  label <- stringr::str_replace(label, "\\^\\+", "\\^")
   label[index_zero] <- "0"
   parse(text=label)
 }
