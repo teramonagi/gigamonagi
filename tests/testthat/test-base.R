@@ -18,3 +18,8 @@ test_that("has_na()", {
   expect_equal(has_na(df), c(a=FALSE, b=FALSE, c=TRUE))
 })
 
+test_that("mode()", {
+  print(mode(c("A", "A", "A", "B")))
+  expect_equal(mode(c(1,2,3,3,3,6)), 3)
+  expect_equal(mode(c("A", "A", "A", "B")), "A")
+})
