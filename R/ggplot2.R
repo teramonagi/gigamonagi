@@ -9,8 +9,8 @@
 #' df <- data.frame(x=10^(-2:1),y=10^(-2:1))
 #' ggplot(df, aes(x, y)) +
 #'   geom_point() +
-#'   scale_x_continuous(label=scientific_format()) +
-#'   scale_y_continuous(label=scientific_format())
+#'   scale_x_continuous(label=scientific_10) +
+#'   scale_y_continuous(label=scientific_10)
 #' }
 #'
 #' @export
