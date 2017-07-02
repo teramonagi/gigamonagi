@@ -12,7 +12,10 @@ LazyData: true
 Imports:
   dplyr,
   readr,
-  httr
+  httr,
+  ggplot2,
+  scales,
+  stringr
 Suggests:
   testthat
 RoxygenNote: 6.0.1
