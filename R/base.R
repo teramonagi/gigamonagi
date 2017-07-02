@@ -33,3 +33,21 @@ has_na <- function(df)
 {
   apply(df, 2, function(x){any(is.na(x))})
 }
+
+#' Mode Value
+#'
+#' Compute the sample mode value
+#'
+#' @param x vector(numeric or character)
+#'
+#' @examples
+#' mode(c(1,2,3,3,3,6))
+#' mode(c("A", "A", "A", "B"))
+#'
+#' @export
+mode <- function(x)
+{
+  result <- names(which.max(table(x)))
+  transform <- ifelse(is.numeric(x), as.numeric, identity)
+  transform(result)
+}
