@@ -48,6 +48,6 @@ has_na <- function(df)
 mode <- function(x)
 {
   result <- names(which.max(table(x)))
-  transform <- ifelse(is.numeric(x), as.numeric, I)
+  transform <- ifelse(is.numeric(x), as.numeric, identity)
   transform(result)
 }

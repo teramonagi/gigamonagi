@@ -19,7 +19,6 @@ test_that("has_na()", {
 })
 
 test_that("mode()", {
-  print(mode(c("A", "A", "A", "B")))
-  expect_equal(mode(c(1,2,3,3,3,6)), 3)
-  expect_equal(mode(c("A", "A", "A", "B")), "A")
+  expect_equal(gigamonagi::mode(c(1,2,3,3,3,6)), 3)
+  expect_equal(gigamonagi::mode(c("A", "A", "B")), "A")
 })
